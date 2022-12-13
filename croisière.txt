@@ -1,0 +1,44 @@
+/* NOM PRENOM
+
+SUJET CROISIERE
+
+Q1 : c'est un ...
+Parce que ...
+
+*/
+
+/* Q2 : 
+
+Dans mon code S représente 
+Une cabine : [H, F, N, A]
+
+*/
+
+bateau(S) :-
+	S = [[_,_,_,5],
+	[gabriel,_,_,20],[_,sophie,164,30],[_,_,_,40]],
+
+	member([gaetan, lucie, 84, A5], S),
+
+	member([gabriel, _, _, A1], S),
+	member([_,karine,_,A2], S),
+	A1 \== A2,
+
+	member([loic, _, _, A3], S),
+	A3 =\= 40,
+
+	member([_,_,116,A4], S),
+	A4 > A5,
+	A4 < 40,
+
+	member([andre,_,_,_], S),
+	member([_,francoise,_,_], S),
+	member([_,_,248,_], S).
+
+
+
+
+
+
+
+	
